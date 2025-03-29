@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: PeerReview.ai
-        uses: PeerReview-ai/agent@v0.0.1
+        uses: PeerReview-ai/agent@0.0.1
         with:
           openai-api-key: ${{ secrets.OPENAI_API_KEY }}
           model: 'gpt-3.5-turbo'
