@@ -1,0 +1,24 @@
+name: AI Code Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+jobs:
+  peerreview-ai:
+    runs-on: ubuntu-latest
+    steps:
+      - name: AI Code Review
+        uses: PeerReview-ai/agent@v0.0.1
+        with:
+          openai-api-key: ${{ secrets.OPENAI_API_KEY }}
+          model: 'gpt-3.5-turbo'
+          review-type: 'full'
+          allowed-repositories: '*'
