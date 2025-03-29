@@ -5,13 +5,6 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-  review:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pull-requests: write
-
-jobs:
   peerreview-ai:
     runs-on: ubuntu-latest
     steps:
