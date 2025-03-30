@@ -5,16 +5,6 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-  peerreview-ai:
-    runs-on: ubuntu-latest
-    steps:
-      - name: PeerReview.ai
-        uses: PeerReview-ai/agent@0.0.1
-        with:
-          openai-api-key: ${{ secrets.OPENAI_API_KEY }}
-          model: 'gpt-3.5-turbo'
-          review-type: 'full'
-          allowed-repositories: '*'
   review:
     runs-on: ubuntu-latest
     permissions:
