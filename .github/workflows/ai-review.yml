@@ -26,4 +26,3 @@ jobs:
           api-key: ${{ secrets.PEERREVIEW_API_KEY }}
           api-endpoint: https://agent-git-setup-adrian-veras-projects.vercel.app
           review-type: full  # optional: full, focused, or security
-```
