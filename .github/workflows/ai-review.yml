@@ -10,7 +10,7 @@ jobs:
       contents: read
       pull-requests: write
     steps:
-      - uses: adrianveracom/agent@setup
+      - uses: adrianveracom/agent@do
         with:
           api-key: ${{ secrets.PEERREVIEW_API_KEY }}
           api-endpoint: https://api.getpeerreview.com
