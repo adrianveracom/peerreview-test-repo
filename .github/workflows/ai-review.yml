@@ -14,5 +14,5 @@ jobs:
       - uses: adrianveracom/agent@setup
         with:
           api-key: ${{ secrets.PEERREVIEW_API_KEY }}
-          api-endpoint: https://agent-sage.vercel.app
+          api-endpoint: https://peerreview-api-26prg.ondigitalocean.app
           review-type: full  # optional: full, focused, or security
