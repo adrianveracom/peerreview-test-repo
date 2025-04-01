@@ -13,5 +13,5 @@ jobs:
       - uses: adrianveracom/agent@setup
         with:
           api-key: ${{ secrets.PEERREVIEW_API_KEY }}
-          api-endpoint: https://api.peerreview.com
+          api-endpoint: https://api.getpeerreview.com
           review-type: full  # optional: full, focused, or security
