@@ -1,11 +1,10 @@
-name: AI Code Review
-
+name: PeerReview
 on:
   pull_request:
     types: [opened, synchronize, reopened]
 
 jobs:
-  review:
+  peer-review:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -14,5 +13,5 @@ jobs:
       - uses: adrianveracom/agent@setup
         with:
           api-key: ${{ secrets.PEERREVIEW_API_KEY }}
-          api-endpoint: https://peerreview-api-26prg.ondigitalocean.app
+          api-endpoint: https://api.peerreview.com
           review-type: full  # optional: full, focused, or security
