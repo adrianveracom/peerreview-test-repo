@@ -6,7 +6,7 @@ export default function ContactPage() {
       <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
       <div className="max-w-2xl">
         <p className="text-lg mb-8">
-          Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+          Have questions? We'd love to hear from you.. Send us a message and we'll respond as soon as possible.
         </p>
         
         <form className="space-y-6">
