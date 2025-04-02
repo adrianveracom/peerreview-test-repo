@@ -4,13 +4,13 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-  peer-review:
+  review:
     runs-on: ubuntu-latest
     permissions:
       contents: read
       pull-requests: write
     steps:
-      - uses: adrianveracom/agent@do
+      - uses: adrianveracom/agent@test/other
         with:
           api-key: ${{ secrets.PEERREVIEW_API_KEY }}
           api-endpoint: https://api.getpeerreview.com
