@@ -25,7 +25,7 @@ export default function ContactPage() {
           
           <div>
             <label htmlFor="email" className="block text-sm font-medium mb-2">
-              Email
+              Emailio
             </label>
             <input
               type="email"
